@@ -79,8 +79,9 @@ body {
 	overflow: hidden;
 }
 .container {
-	width: 1000px;
+	max-width: 1400px;
 	margin: auto;
+	padding: 0 50px;
 	height: 100%;
 }
 .table {
@@ -99,7 +100,7 @@ h1 {
 	display: inline-block;
 	font-size: 2em;
 	margin: 0;
-	width: 520px;
+	width: 240px;
 }
 .st-container {
 	position: absolute;
@@ -261,7 +262,7 @@ h1 {
 	transform: translateY(-50%) rotate(45deg);
 }
 [data-icon]:after {
-	background: url("../images/lejin_logo2.png") no-repeat scroll 100% center / 100% auto rgba(0, 0, 0, 0);
+	/* background: url("../images/lejin_logo2.png") no-repeat scroll 100% center / 100% auto rgba(0, 0, 0, 0); */
 	color: rgb(255, 255, 255);
 	content: "";
 	font-size: 90px;
@@ -280,16 +281,18 @@ h1 {
 	transform: rotate(-45deg) translateY(25%);
 }
 .st-panel h2 {
-	color: rgb(82, 173, 220);
-	display: inline-block;
-	font-size: 32px;
-	font-weight: 300;
-	line-height: 50px;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	text-align: center;
-	-webkit-backface-visibility: hidden;
+	color: rgb(0 0 0);
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    max-width: 800px;
+    margin: auto;
 }
 #st-control-1:checked ~ .st-scroll #st-panel-1 h2, #st-control-2:checked ~ .st-scroll #st-panel-2 h2, #st-control-3:checked ~ .st-scroll #st-panel-3 h2, #st-control-4:checked ~ .st-scroll #st-panel-4 h2, #st-control-5:checked ~ .st-scroll #st-panel-5 h2 {
 	-webkit-animation: moveDown 0.6s ease-in-out 0.3s backwards;
@@ -415,13 +418,13 @@ h1 {
 /* Colored sections */
 
 .st-color, .st-deco {
-	background: none repeat scroll 0 0 rgb(57, 180, 245);
+	background: #488EFF;
 }
 .st-color [data-icon]:after {
 	color: #fa96b5;
 }
 .st-color .st-deco {
-	background: none repeat scroll 0 0 rgb(74, 82, 105);
+	/* background: none repeat scroll 0 0 rgb(74, 82, 105); */
 	border: 3px solid rgb(255, 255, 255);
 }
 .st-color h2 {
@@ -432,6 +435,7 @@ h1 {
 #service_icon_wraper {
 	clear: both;
 	margin-bottom: 50px;
+	padding-bottom: 100px;
 }
 #service_icon_wraper ul {
 	display: block;
@@ -493,21 +497,21 @@ h1 {
 }
 .thump {
 	float: left;
-	padding: 50px 15px 15px 15px;
-	width: 25%;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	text-align: left;
-	border-radius: 10px;
-	min-height: 450px;
-}
-@media (max-width:767px){
-	.thump{
-		width: 100%;
-		float: none;
-		min-height: auto;
+	float: left;
+    padding: 50px 40px 15px 40px;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    text-align: left;
+    border-radius: 10px;
+	@media (max-width:767px){
+		.thump{
+			width: 100%;
+			float: none;
+			min-height: auto;
+		}
 	}
 }
 .thump * {
@@ -515,25 +519,32 @@ h1 {
 }
 .thump span {
 	border-radius: 50%;
-	color: #fff;
 	display: block;
 	font-size: 60px;
 	height: 90px;
 	line-height: 90px;
 	width: 90px;
-	color: #000;
+	color: #fff;
+	position: relative;
 }
-.thump:hover span {
-	color: #4a5269;
+.thump span:before {
+	position: absolute;
+	transition: 0.3s ease-in-out;
 }
-.thump:hover h2 {
+.thump:hover span:before {
+	color: #fff;
+	-webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
 }
 .thump h2 {
 	font-size: 25px;
 	font-weight: 600;
 	margin: 0;
-	color: #393939;
+	color: #80E7FF;
 	text-align: left;
+}
+.thump:hover h2 {
+	color: #fff;
 }
 .ThumpCollaps {
 	color: #fff;
@@ -541,7 +552,7 @@ h1 {
 }
 .ThumpCollaps p {
 	font-size: 16px;
-	color: #4a5269;
+	color: #fff;
 	margin: 0;
 	font-weight: 300;
 }

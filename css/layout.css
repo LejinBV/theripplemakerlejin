@@ -38,13 +38,18 @@
 
 
 .container { 
+	
 	position: relative; 
-	width: 960px; 
+	max-width: 1400px; 
 	margin: 0 auto; 
+	padding: 0 50px;
 	-webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;	
+}
+#st-panel-2{
+	overflow: auto;
 }
  
 #filters {
