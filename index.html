@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>::Lejin B. Varghese::</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Lejin B. Varghese, HTML5, CSS3, Responsive, Web Desinger, Graphic Designer, Best WebDesignes" />
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+
+		<!-- Flickity gallery styles -->
+		<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+		<!-- Component styles -->
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
+		<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+
+		<!--Popup -->
+
+		<div class="overlay">
+			<div class="CenterWrap">
+				<div class="CenterWrapInner">
+					<div class="L-popup">
+						<img id="img" src="img/images/logo/5.jpg" alt="" /><a href="#" class="close icon-cross"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Popup -->
+
+		<div class="wrapper">
+			<div class="st-container">
+				<input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+				<a href="#st-panel-1">Who i'm</a>
+				<input type="radio" name="radio-set" id="st-control-2"/>
+				<a href="#st-panel-2">What i do</a>
+				<input type="radio" name="radio-set" id="st-control-3"/>
+				<a href="#st-panel-3">My Showcase</a>
+				<input type="radio" name="radio-set" id="st-control-4"/>
+				<a href="#st-panel-4">Contact Me</a>
+				<div class="st-scroll">
+					<section class="st-panel" id="st-panel-1">
+						<div class="container">
+							<div class="table">
+								<div class="table_cell">
+									<h1><img src="images/Lejin.png" alt="Lejin"></h1>
+									<div class="clearFix"></div>
+									<h2>Hi! I’m Lejin B. Varghese,I create designs that are innovative, simple yet appealing to audiences worldwide.</h2>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="st-panel st-color" id="st-panel-2">
+						<div class="st-deco" data-icon="B"></div>
+						<div class="container">
+							<div class="table">
+								<div class="table_cell">
+									<div class="logo_freediv"></div>
+									<h2>WHAT I’M dOING</h2>
+									<div class="clearFix"></div>
+									<article id="service_icon_wraper">
+										<div id="thump" class="thump">
+											<span class="thump_span icon-webdesigning"></span>
+											<h2>Web Designing</h2>
+											<div class="ThumpCollaps">
+												<p>
+													Using customized designs and standardized coding, highly responsive and user-interactive websites are developed for various platforms. I specialize in various areas of web design: graphic design, interface design, user experience design, and so on.
+												</p>
+											</div>
+										</div>
+										<div id="thump" class="thump">
+											<span class="thump_span icon-branding"></span>
+											<h2>Branding</h2>
+											<div class="ThumpCollaps">
+												<p>
+													Be it individual or company branding services, I offer the latest ideas and concepts in making your presence felt, as well as increasing client visibility in any medium or market. Using analytical data on consumer trends and positioning, I can design effective, relevant, and viable branding portfolios for you.
+												</p>
+											</div>
+										</div>
+										<div id="thump" class="thump">
+											<span class="thump_span icon-adv"></span>
+											<h2>Advertising</h2>
+											<div class="ThumpCollaps">
+												<p>
+													Designing of banners and blogs, popup and animated advertisements for multiple media: web, mobile, email, print. Using niche marketing and crowdsourcing technology, I design and develop highly innovative solutions to get your message across to your customers.
+												</p>
+											</div>
+										</div>
+										<div id="thump" class="thump">
+											<span class="thump_span icon-printing"></span>
+											<h2>Print Media</h2>
+											<div class="ThumpCollaps">
+												<p>
+													Using the most recent technological advancements, professional design tools, and creative inspiration, I develop visually-stunning and domain-relevant infographics for the print media. Knowledge of color profiles and composite artwork helps me deliver class-leading print portfolios for you.
+												</p>
+											</div>
+										</div>
+										<div class="clearFix"></div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="st-panel" id="st-panel-3">
+						<div class="st-deco" data-icon="B"></div>
+						<div class="">
+							<div class="table">
+								<div class="table_cell">
+									<div class="logo_freediv"></div>
+									<h2>MY SHOWCASE</h2>
+									<div class="clearFix"></div>
+
+									<div class="bar">
+										<div class="filter">
+											<span class="filter__label">Filter: </span>
+											<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+											<button class="action filter__item" data-filter=".web"><span class="action__text">web</span></button>
+											<button class="action filter__item" data-filter=".logo"><span class="action__text">logo</span></button>
+											<button class="action filter__item" data-filter=".card"><span	class="action__text">card</span></button>
+											<button class="action filter__item" data-filter=".app"><span class="action__text">app</span></button>
+										</div>
+										<button class="cart"></button>
+									</div>
+									<!-- Main view -->
+										
+									<div class="view">
+										<!-- Grid -->
+										<section class="grid grid--loading">
+											<!-- Loader -->
+											<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+											<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+											<div class="grid__sizer"></div>
+											<!-- Grid items -->
+											<div class="grid__item web grid__item--size-a">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/web/hiitrebel-01.jpg"><img src="images/album/web/hiitrebel-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/hiitrebel.jpg"><img src="images/album/web/hiitrebel.jpg" alt="UI UX Design : Lejin" /></a>	</div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/bookASession.jpg"><img src="images/album/web/bookASession.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/My-reward-history.jpg"><img src="images/album/web/My-reward-history.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/studios-listing.jpg"><img src="images/album/web/studios-listing.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/pricing.jpg"><img src="images/album/web/pricing.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">HiitRebel</h3>
+													<span class="meta__brand">Web Application</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+
+											<div class="grid__item app ">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/app/hiitarmy.jpg"><img src="images/album/app/hiitarmy.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/app/home@2x.png"><img src="images/album/app/home@2x.png" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/app/menu open@2x.png"><img src="images/album/app/menu open@2x.png" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/app/pricing@2x.png"><img src="images/album/app/pricing@2x.png" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/app/studio detailed@2x.png"><img src="images/album/app/studio detailed@2x.png" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/app/studio listing@2x.png"><img src="images/album/app/studio listing@2x.png" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/app/user profile@2x.png"><img src="images/album/app/studio listing@2x.png" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">HiitRebel</h3>
+													<span class="meta__brand">Mobile Application</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											
+											<div class="grid__item logo grid__item--size-a">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ed.jpg"><img	src="images/album/logo/ed.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ed-v.jpg"><img	src="images/album/logo/ed-v.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ed-v0.jpg"><img	src="images/album/logo/ed-v0.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ed-v1.jpg"><img	src="images/album/logo/ed-v1.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ed-v2.jpg"><img	src="images/album/logo/ed-v2.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ed-v3.jpg"><img	src="images/album/logo/ed-v3.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">E and D</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											
+											
+											<div class="grid__item logo grid__item--size-a">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/6weeks2wellness-v01.jpg"><img	src="images/album/logo/6weeks2wellness-v01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/6weeks2wellness-v02.jpg"><img	src="images/album/logo/6weeks2wellness-v02.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/6weeks2wellness-v03.jpg"><img	src="images/album/logo/6weeks2wellness-v01.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Six Weeks to  Wellness</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+
+											<div class="grid__item logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/pieta-01.jpg"><img	src="images/album/logo/pieta-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/pieta-02.jpg"><img	src="images/album/logo/pieta-02.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Pieta Sound Studio</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to
+														cart</span></button>
+											</div>
+											
+											<div class="grid__item logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/ablaze-001.jpg"><img	src="images/album/logo/ablaze-001.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Ablaze Spiritual  Community</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to
+														cart</span></button>
+											</div>
+
+											<div class="grid__item grid__item--size-a logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/qoodo-v01.jpg"><img src="images/album/logo/qoodo-v01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/qoodo-v02.jpg"><img src="images/album/logo/qoodo-v02.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/qoodo-v03.jpg"><img src="images/album/logo/qoodo-v03.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/qoodo-v04.jpg"><img src="images/album/logo/qoodo-v04.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/qoodo-v05.jpg"><img src="images/album/logo/qoodo-v05.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Qoodo</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											<div class="grid__item grid__item--size-a card">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/card/qoodo-front.jpg"><img src="images/album/card/qoodo-front.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/card/qoodo-back.jpg"><img src="images/album/card/qoodo-back.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Qoodo</h3>
+													<span class="meta__brand">Business Card</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											<!-- <div class="grid__item grid__item--size-a logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/crypto-bucket-v01.jpg"><img src="images/album/logo/crypto-bucket-v01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/crypto-bucket-v02.jpg"><img src="images/album/logo/crypto-bucket-v02.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Qoodo</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to
+														cart</span></button>
+											</div> -->
+											<div class="grid__item logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/al-karma.jpg"><img src="images/album/logo/al-karma.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Al Karma</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to
+														cart</span></button>
+											</div>
+											<div class="grid__item grid__item--size-a logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/integrity-research-lab-01.jpg"><img src="images/album/logo/integrity-research-lab-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/integrity-research-lab-03.jpg"><img src="images/album/logo/integrity-research-lab-03.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/integrity-research-lab-02.jpg"><img src="images/album/logo/integrity-research-lab-02.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Qoodo</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to
+														cart</span></button>
+											</div>
+
+
+											<div class="grid__item web grid__item--size-a">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/web/loanplus-home.jpg"><img src="images/album/web/loanplus-home.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/loanplus-home-01.jpg"><img src="images/album/web/loanplus-home-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Loan Plus</h3>
+													<span class="meta__brand">Web Project</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											
+											<div class="grid__item logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/AOto-01.jpg"><img src="images/album/logo/AOto-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/AOto-02.jpg"><img src="images/album/logo/AOto-02.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/AOto-03.jpg"><img src="images/album/logo/AOto-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">A Zeero Two</h3>
+													<span class="meta__brand">Web Application</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											
+											<div class="grid__item web">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/web/finology.jpg"><img src="images/album/web/finology.jpg" alt="UI UX Design : Lejin" /></a></div>
+													
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Finology</h3>
+													<span class="meta__brand">Web Application</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											<div class="grid__item web web grid__item--size-a">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/web/loanstreet-home.jpg"><img src="images/album/web/loanstreet-home.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/credit-card-product-listing.jpg"><img	src="images/album/web/credit-card-product-listing.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/H-Loan-product-listing.jpg"><img src="images/album/web/H-Loan-product-listing.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/P-Loanproduct-listing.jpg"><img	src="images/album/web/P-Loanproduct-listing.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Loanstreet</h3>
+													<span class="meta__brand">Web Application</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+
+
+											<div class="grid__item grid__item--size-a logo">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/logo/akshaya.png"><img src="images/album/logo/akshaya.png" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/akshaya-01.jpg"><img src="images/album/logo/akshaya-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/akshaya-03.jpg"><img src="images/album/logo/akshaya-03.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/logo/akshaya-04.jpg"><img src="images/album/logo/akshaya-04.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">Qoodo</h3>
+													<span class="meta__brand">Logo Developement</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+											</div>
+											
+											
+											<div class="grid__item grid__item--size-a web grid__item--size-a">
+												<div class="slider">
+													<div class="slider__item"><a target="_blank" href="images/album/web/libsimarkh-01.jpg"><img src="images/album/web/libsimarkh-01.jpg" alt="UI UX Design : Lejin" /></a></div>
+													<div class="slider__item"><a target="_blank" href="images/album/web/libsimarkh-02.jpg"><img src="images/album/web/libsimarkh-02.jpg" alt="UI UX Design : Lejin" /></a></div>
+												</div>
+												<div class="meta">
+													<h3 class="meta__title">LibsiMarkh</h3>
+													<span class="meta__brand">Web Application</span>
+												</div>
+												<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to
+														cart</span></button>
+											</div>
+											
+										</section>
+										<!-- /grid-->
+									</div>
+									<!-- /view -->
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="st-panel st-color" id="st-panel-4">
+						<div class="st-deco" data-icon="x"></div>
+						<div class="container">
+							<div class="table">
+								<div class="table_cell">
+									<div class="logo_freediv"></div>
+									<h2>Contact me</h2>
+									<div class="clearFix"></div>
+									<div class="contact_wraper">
+										
+										<!-- class="co_left" -->
+										<div >
+											<p><span>Phone:</span> +60 17-6946961</p>
+											
+											<!-- <p>
+												<span>Email:</span><a href="mailto:lejin86@gmail.com">lejin86@gmail.com</a>
+											</p> -->
+											<div class="clearFix"></div>
+											<div class="contact_form">
+												<h5>Drop me a line...</h5>
+												<div class="form-style" id="contact_form">
+													<div id="contact_results"></div>
+													<div id="contact_body">
+														<label><span>Name <small class="required">*</small></span>
+															<input type="text" name="name" id="name" required="true" class="input-field"/>
+														</label>
+														<label><span>Email <small class="required">*</small></span>
+															<input type="email" name="email" required="true" class="input-field"/>
+														</label>
+														<label><span>Phone<small class="required">*</small></span>
+															<input type="text" name="phone" maxlength="15"  required="true" class="tel-number-field long" />
+														</label>
+														<label for="field5"><span>Message <small class="required">*</small></span> 															<textarea name="message" id="message" class="textarea-field" required="true"></textarea> </label>
+														<label> <span>&nbsp;</span>
+															<input type="submit" id="submit_btn" value="Submit" />
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- // st-scroll -->
+
+			</div>
+			<!-- // st-container -->
+
+		</div>
+		
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+		</script>
+	</body>
+</html>
